@@ -1,0 +1,9 @@
+   
+    <div class="container" style="height:100%;">
+        <h1>List of Music</h1>
+        <div id="music-list" class="collection">
+           {{#each musics}}
+             <a href="/musicList/play?name={{this}}" class="collection-item">{{this}}</a>
+           {{/each}}
+        </div>
+    </div>

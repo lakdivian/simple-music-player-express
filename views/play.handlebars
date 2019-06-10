@@ -1,0 +1,17 @@
+<div style="height:100%;text-align:center;">
+    <div style="height:100%;margin-top:10%;float:left;width:70%;">
+        <h3>{{name}} Playing</h3>
+        <audio controls autoplay style="width: 70%;">
+            <source src="/musics/{{name}}" type="audio/mpeg">
+                Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div style="width:30%;float:left;">
+        <h3>Next Playing</h3>
+        <div id="music-list" class="collection">
+           {{#each musics}}
+             <a href="/musicList/play?name={{this}}" class="collection-item">{{this}}</a>
+           {{/each}}
+        </div>
+    </div>
+</div>
